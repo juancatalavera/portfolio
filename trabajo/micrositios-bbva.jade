@@ -1,0 +1,31 @@
+doctype html
+
+html
+
+	include ../includes/head.jade
+
+	body
+		.wrapper
+			include ../includes/header.jade
+		
+			.laburo
+				.columna-detalle-laburos
+					.detalle-laburo
+						.actividades
+							span.act Diseño
+							span.act HTML / CSS
+						h2 Micrositios BBVA
+						p En el banco decidieron modificar los micrositios que ya tenían, agregar un par y agruparlos todos en una suerte de portal.
+					
+					.modulo-imagen-descripcion
+						img(src="../images/bbva-micrositios-propuestas.jpg", alt="")
+						p Dos propuestas para el mismo portal. El resultado final fue algo así como una combinación de ambas.
+			
+					.modulo-imagen-descripcion
+						img(src="../images/bbva-micrositios-encabezados.jpg", alt="")
+						p Detalle de encabezados para cada sección. Finalmente se terminaron usando encabezados y gráficos diseñados por la agencia. El <a href="https://www.beneficiosbbva.com.py/">sitio definitivo</a>, en consecuencia, tiene aproximadamente la misma estructura pero no los mismos gráficos que estas propuestas.
+
+				.columna-nav-laburos
+					include ../includes/nav-laburos.jade
+		
+			include ../includes/contactos.jade

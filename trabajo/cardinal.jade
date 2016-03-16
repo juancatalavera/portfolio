@@ -1,0 +1,32 @@
+doctype html
+
+html
+
+	include ../includes/head.jade
+
+	body
+		.wrapper
+			include ../includes/header.jade
+		
+			.laburo
+				.columna-detalle-laburos
+					.detalle-laburo
+						.actividades
+							span.act Diseño
+							span.act HTML / CSS
+						h2 Radio Cardinal
+						p Sitio para Radio Cardinal AM / FM. La idea era hacer algo limpio, con énfasis en las noticias que el departamento de prensa de la radio genera a lo largo del día, y ofrecer un enlace directo que permitiera a los usuarios escuchar la radio (AM o FM) via Internet.
+
+					.modulo-imagen-descripcion
+						img(src="../images/cardinal-1.gif", alt="")
+						p Este fue el diseño inicial, que todavía es mi favorito.
+
+					.modulo-imagen-descripcion
+						img(src="../images/cardinal-final.gif", alt="")
+						p Me pidieron que haga algo más orientado a la AM, y que le agregue más color. Con el tiempo, también se sumó la opción de escuchar fragmentos de audio editados por el departamento de prensa. 
+
+				.columna-nav-laburos
+					include ../includes/nav-laburos.jade
+
+
+			include ../includes/contactos.jade

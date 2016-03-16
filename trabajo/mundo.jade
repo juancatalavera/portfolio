@@ -1,0 +1,27 @@
+doctype html
+
+html
+
+	include ../includes/head.jade
+
+	body
+		.wrapper
+			include ../includes/header.jade
+		
+			.laburo
+				.columna-detalle-laburos
+					.detalle-laburo
+						.actividades
+							span.act Diseño
+							span.act HTML / CSS
+						h2 Mundo.com
+						p Este dominio funcionó inicialmente como un sitio de noticias internacionales que utilizaba un diseño bastante similar a Paraguay.com. Esto no prosperó, y se convirtió luego en una especie de buscador, y hoy día (marzo, 2016) es un sitio de contenido viral. Pero en algún momento, entre tantas transiciones, se exploró la idea de convertirlo en un portal con contenido propio y de calidad. Este es el resultado de esa exploración.
+					
+					.modulo-imagen-descripcion
+						img(src="../images/updt-mundo.jpg", alt="")
+						p <a href="http://chena.com/biografia-de-christian-chena.html" target="_blank">El jefe</a> tenía una idea bastante clara de lo que quería, y de hecho me envió un diseño que hizo él, cortando y pegando fragmentos de distintos sitios, con la instrucción "hacé que esto sea lindo". Llegó a ser un modelo perfectamente funcional en html, pero nunca se terminó de programar y por tanto nunca estuvo "live", por razones que ignoro o por ahí simplemente olvidé. C'est la vie.
+				
+				.columna-nav-laburos
+					include ../includes/nav-laburos.jade
+
+			include ../includes/contactos.jade

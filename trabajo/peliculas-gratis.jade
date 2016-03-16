@@ -1,0 +1,28 @@
+doctype html
+
+html
+
+	include ../includes/head.jade
+
+	body
+		.wrapper
+			include ../includes/header.jade
+		
+			.laburo
+				.columna-detalle-laburos
+					.detalle-laburo
+						.actividades
+							span.act Diseño
+							span.act HTML / CSS
+						h2 Planeta Películas Gratis
+						p Hice no menos de 5 sitios parecidos a este, todos con la misma idea: tomar películas de Crackle.com, rodearlas de un diseño propio, con banners en todos los lugares posibles, y sentarse a contar el dinero. Es totalmente legal, y Crackle no tiene ningun problema porque su publicidad va <em>en</em> la película.
+					
+					.modulo-imagen-descripcion
+						img(src="../images/updt-peliculas-gratis.jpg", alt="")
+						p Este es el diseño puro, sin banners por ningún lado. Creo recordar que el sitio final tenía una página intermedia, entre donde uno elegía la película y donde uno la veía, con información sobre la película y un banner, o dos, o tres. Prefiero mostrarlo así.
+
+				.columna-nav-laburos
+					include ../includes/nav-laburos.jade
+
+				
+			include ../includes/contactos.jade

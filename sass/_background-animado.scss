@@ -1,0 +1,24 @@
+@mixin animacion-de-fondo {
+	background: linear-gradient(315deg, #dadada, #ffffff);
+	background-size: 400% 400%;
+
+	-webkit-animation: gradiente-animado 24s ease infinite;
+	-moz-animation: gradiente-animado 24s ease infinite;
+	animation: gradiente-animado 24s ease infinite;
+
+	@-webkit-keyframes gradiente-animado {
+	    0%{background-position:50% 0%}
+	    50%{background-position:51% 100%}
+	    100%{background-position:50% 0%}
+	}
+	@-moz-keyframes gradiente-animado {
+	    0%{background-position:50% 0%}
+	    50%{background-position:51% 100%}
+	    100%{background-position:50% 0%}
+	}
+	@keyframes gradiente-animado {
+	    0%{background-position:50% 0%}
+	    50%{background-position:51% 100%}
+	    100%{background-position:50% 0%}
+	}
+}

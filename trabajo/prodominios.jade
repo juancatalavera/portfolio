@@ -1,0 +1,35 @@
+doctype html
+
+html
+
+	include ../includes/head.jade
+
+	body
+		.wrapper
+			include ../includes/header.jade
+		
+			.laburo
+				.columna-detalle-laburos
+					.detalle-laburo
+						.actividades
+							span.act Diseño
+							span.act HTML / CSS
+						h2 Prodominios
+						p Este fue un rediseño con algunas limitaciones, porque algunas secciones del sitio (la sección de administración de dominios, por ejemplo) no se pudieron cambiar, ya que eran parte de paquete de software externo. El resultado es que el home y algunas secciones internas usaron el diseño nuevo, pero la parte más importante del sitio, donde se encuentra toda la funcionalidad, continuó (capaz continúa todavía) con el diseño viejo.
+					
+					.modulo-imagen-descripcion
+						img(src="../images/prodominios-home-viejo.jpg", alt="")
+						p Esto es lo que existía. Era un sitio funcional, con bastante gente utilizandolo sin mayores problemas. Creo que empecé haciendo banners para reemplazar los que había y terminé sugiriendo un rediseño del sitio entero. Porque tenía tiempo, supongo.
+
+					.modulo-imagen-descripcion
+						img(src="../images/prodominios-1.jpg", alt="")
+						p Uno de los pedidos de la gente de Prodominios fué que se destaque más el servicio de hospedaje, así que intenté darle importancia a eso. También intenté simplificar la paleta de colores y reducir el ruido visual, con tanto éxito que este diseño no se utilizó por ser <em>demasiado</em> simple. Una pena.
+
+					.modulo-imagen-descripcion
+						img(src="../images/prodominios-3.jpg", alt="")
+						p Esto es lo más aproximado que tengo a lo que terminó siendo el diseño final (que todavia existe, pero ahora se ve como si un payaso <a href="http://prodominios.paraguay.com/" target="_blank">hubiera explotado encima</a>). Esta versión es más colorida y tiene más contenido que el diseño previo, pero mantiene la misma estructura general.
+				
+				.columna-nav-laburos
+					include ../includes/nav-laburos.jade
+
+			include ../includes/contactos.jade

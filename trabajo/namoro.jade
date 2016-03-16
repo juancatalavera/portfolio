@@ -1,0 +1,31 @@
+doctype html
+
+html
+
+	include ../includes/head.jade
+
+	body
+		.wrapper
+			include ../includes/header.jade
+		
+			.laburo
+				.columna-detalle-laburos
+					.detalle-laburo
+						.actividades
+							span.act Diseño
+							span.act HTML / CSS
+						h2 Namoro.com
+						p En algún momento alguien se iba a preguntar: que resultaría de combinar Clasipar con Club? Resultó esto.
+				
+					.modulo-imagen-descripcion
+						img(src="../images/namoro-1.jpg", alt="")
+						p El home del sitio. Actualmente ya no existe, así que combinar dos conceptos exitosos no siempre es garantía. De todos modos creo que el sitio se vendió, asi que para mi jefe al menos fue un éxito.
+			
+					.modulo-imagen-descripcion
+						img(src="../images/namoro-2.jpg", alt="")
+						p Ejemplo de la página de perfil.
+		
+				.columna-nav-laburos
+					include ../includes/nav-laburos.jade
+
+			include ../includes/contactos.jade

@@ -1,0 +1,30 @@
+doctype html
+
+html
+
+	include ../includes/head.jade
+
+	body
+		.wrapper
+			include ../includes/header.jade
+		
+			.laburo
+				.columna-detalle-laburos
+					.detalle-laburo
+						.actividades
+							span.act Diseño
+						h2 Todo lo demás
+						p Una heterogénea colección de cosas que individualmente no justifican una página propia, y no pude acomodar satisfactoriamente en otra categoría.
+				
+					.modulo-imagen-descripcion
+						img(src="../images/todos-los-logos.jpg", alt="")
+						p Logotipos. Algunos se usaron, otros son sólo ideas que me gustaron pero nunca se usaron.
+		
+					.modulo-imagen-descripcion
+						img(src="../images/varios.jpg", alt="")
+						p Banners publicitarios, tarjetas, cositas varias.
+		
+				.columna-nav-laburos
+					include ../includes/nav-laburos.jade
+					
+			include ../includes/contactos.jade

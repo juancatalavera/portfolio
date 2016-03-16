@@ -1,0 +1,35 @@
+doctype html
+
+html
+
+	include ../includes/head.jade
+
+	body
+		.wrapper
+			include ../includes/header.jade
+		
+			.laburo
+				.columna-detalle-laburos
+					.detalle-laburo
+						.actividades
+							span.act Diseño
+							span.act HTML / CSS
+						h2 Clasificados.com
+						p Con la experiencia de haber desarrollado Clasipar, contábamos con una buena base para encarar otros sitios de clasificados, esta vez con el mercado internacional en mente. Inicialmente la idea de este sitio era la siguiente: si buscabas un auto, una casa, un empleo, acá encontrarías <strong>todos</strong> los anuncios de los distintos sitios clasificados en tu país.
+					
+					.modulo-imagen-descripcion
+						img(src="../images/clasificados-1.gif", alt="")
+						p La idea inicial. Simple y directo al grano.
+
+					.modulo-imagen-descripcion
+						img(src="../images/clasificados-2.gif", alt="")
+						p Un ejemplo de resultados de búsqueda. Una vez que hicieras click sobre el anuncio que te interesara eras redirigido al sitio donde se originó el aviso, y ya no eras problema nuestro.
+
+					.modulo-imagen-descripcion
+						img(src="../images/clasificados-final.gif", alt="")
+						p Después de un cambio de rumbo terminamos desarrollando un sitio de clasificados tradicional: cargar anuncios propios, administrarlos, etc. Funcionó bastante bien. Me encontraba desarrollando una versión responsive para adaptar el sitio a la creciente demanda del mercado, pero en medio de ese proceso el sitio se vendió, y no pudo ser. Esta es la última versión en la que trabajé, una adaptación para El Salvador.
+						
+				.columna-nav-laburos
+					include ../includes/nav-laburos.jade
+
+			include ../includes/contactos.jade

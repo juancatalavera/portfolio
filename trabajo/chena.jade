@@ -1,0 +1,43 @@
+doctype html
+
+html
+
+	include ../includes/head.jade
+
+	body
+		.wrapper
+			include ../includes/header.jade
+		
+			.laburo
+				.columna-detalle-laburos
+					.detalle-laburo
+						.actividades
+							span.act Diseño
+							span.act HTML / CSS
+						h2 Chena.com
+						p El sitio web de una empresa que hace sitios web (entre otras cosas) no se actualizó durante al menos 10 años. En casa de herrero, etc. Siempre había proyectos más urgentes o más rentables, y así se fué postergando eternamente.
+					
+					.modulo-imagen-descripcion
+						img(src="../images/chena-old.jpg", alt="")
+						p Este era el sitio existente (que no hice yo). Aproximadamente el 90% de la gente en esa foto ya no trabajaba en la empresa.
+
+					.modulo-imagen-descripcion
+						img(src="../images/chena-1.gif", alt="")
+						p Empezamos con esta idea, que me pareció ordenadita aunque quizas un poco demasiado colorida, y algo sobrecargada hacia la derecha.
+
+					.modulo-imagen-descripcion
+						img(src="../images/chena-2.gif", alt="")
+						p La misma idea que el diseño anterior, pero con menos colores y el contenido más balanceado. Esto me gustó mucho más, pero al jefe no tanto, y hubo que seguir explorando.
+
+					.modulo-imagen-descripcion
+						img(src="../images/chena-3.gif", alt="")
+						p Esto se acerca bastante al resultado final, y todo el mundo estaba contento, pero necesitabamos incorporar fotos de la oficina, gente trabajando, y los logos de las distintas empresas que formaban parte del grupo.
+
+					.modulo-imagen-descripcion
+						img(src="../images/chena-final.jpg", alt="")
+						p El diseño final. Ahora, un par de años despues, el 100% de la gente en esta foto ya no trabaja en la empresa. Supongo que por eso <a href="http://www.chena.com" target="_blank">la cambiaron</a>.
+
+				.columna-nav-laburos
+					include ../includes/nav-laburos.jade
+
+			include ../includes/contactos.jade

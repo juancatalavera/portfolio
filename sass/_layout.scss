@@ -1,0 +1,386 @@
+// LAYOUT GENERAL
+
+* {
+	box-sizing: border-box;
+}
+
+$susy: (
+	columns: 12,
+);
+
+.wrapper {
+	@include container(840px);
+	// margin: 0 auto;
+	padding: 1em 0.5em;
+}
+
+// NAVEGACION
+
+.header {
+		display: block;
+		margin-bottom: 1em;
+	@media screen and (min-width: $tablets-para-arriba) {
+			display: flex;
+			justify-content: space-between;
+	}
+}
+
+.logo {
+	@media screen and (min-width: $tablets-para-arriba) {
+	padding-left: 1.5em;
+	}
+	h1 {
+		font-size: 1.4em;
+		line-height: 1;
+		color: $accent;
+	}
+	p {
+		@include titulos-light;
+		font-size: 1em;
+		text-transform: uppercase;
+		color: rgba($color-base, .65);
+	}
+}
+
+.nav {
+	margin: 1em 0 0 0;
+	@media screen and (min-width: $tablets-para-arriba) {
+		margin: 0;
+	}
+	@include titulos-light;
+	ul {
+		margin-bottom: 1.5em;
+		@media screen and (min-width: $tablets-para-arriba) {
+			margin-bottom: 0;
+		}
+		li {
+			display: inline-block;
+			a {
+				padding: 0.5em 1em;
+				@media screen and (min-width: $tablets-para-arriba) {
+					padding: 0.3em 0.5em 0.1em 0.5em;
+				}
+				border: 1px solid rgba($color-base, .2);
+				&:hover {
+					background-color: white;
+				}
+			}
+		}
+	}
+	}
+
+// CONTAINER DE LABUROS
+.laburo {
+	@include container(100%);
+	// TEXTO INTRODUCTORIO EN EL HOME
+	.intro {
+		@include span(12);
+		background-color: white;
+		padding: 1.5em 1.5em 1em 1.5em;
+		margin: 0 0 1em;
+		color: rgba($color-base, .85);
+		p {
+			margin-bottom: 0.5em;
+			@include titulos-light;
+		}
+		a {
+			font-weight: 400;
+			padding: 0 0.3em;
+			background: rgba($accent, .06);
+		}
+	}
+}
+
+// COLUMNA DE LABUROS EN EL HOME
+	.columna-1 {
+		@include span(12);
+		background-color: rgba(white, .65);
+		@include susy-breakpoint($tablets-para-arriba) {
+			@include span(8);
+		}
+		.titulo-columna {
+			padding: 1em;
+			h2 {
+				color: $accent;
+			}
+			p {
+				@include titulos-light;
+				color: rgba(black, .75);
+				line-height: 1.2;
+			}
+		}
+	}
+
+// COLUMNA CON TEXTOS EN EL HOME
+	.columna-2 {
+		@include span(12);
+		@include susy-breakpoint($tablets-para-arriba) {
+			@include span(4 at 9);
+		}
+	}
+
+// CADA LABURO INDIVIDUAL EN EL HOME
+	.modulo {
+		a {
+		overflow: hidden;
+		padding: 1.5em 1em;
+		background-color: rgba(white, .3);
+		display: block;
+		border-bottom: 1px solid rgba($color-base, .2);
+		border-top: 1px solid rgba(white, .75);
+		p {
+			@include titulos-light;
+			line-height: 1.2;
+			margin-bottom: 0.5em;
+			}
+		}
+	}
+
+	// MODULO PARA TEXTOS EN EL HOME
+	.modulo-textos {
+		padding: 1em;
+		background-color: rgba(white, .4);
+		h2 {
+			color: $accent;
+		}
+		p {
+			@include titulos-light;
+			line-height: 1.2;
+			margin-bottom: 0.5em;
+		}
+	}
+
+	// LINKS A TEXTOS EN EL HOME
+.links-a-textos {
+	ul {
+		li {
+			padding: 0.5em 0.25em 0.35em 0.25em;
+			border-bottom: 1px solid rgba($color-base, .1);
+			@include texto-chico-pero-no-tanto;
+			&:nth-of-type(even) {
+				background: rgba(white, .9);
+			}
+			a {
+				color: rgba($color-base, .9);
+				&:hover {
+					color: $color-base;
+				}
+			}
+		}
+	}
+}
+
+// DETALLE LABUROS
+
+.columna-detalle-laburos {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	@include span(12);
+	@include susy-breakpoint($tablets-para-arriba) {
+		@include span(9);
+	}
+}
+
+.columna-nav-laburos {
+	@include span(12);
+	margin-top: 1em;
+	@include susy-breakpoint($tablets-para-arriba) {
+		@include span(3 at 10);
+		margin-top: 0;
+	}
+}
+
+// CAJA ARRIBA CON LA DESCRIPCION DE CADA TRABAJO
+.detalle-laburo {
+	position: relative;
+	padding: 1.5em 1.5em 2.5em 1.5em;
+	background-color: white;
+	h2 {
+		margin-bottom: 0.25em;
+		padding-bottom: 0;
+		line-height: 1.1;
+		color: darken($accent, 10%);
+	}
+	p {
+		@include titulos-light;
+		margin-bottom: 0.5em;
+	}
+	.actividades {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 0.25em 0.25em 1em 1.5em;
+		// background-color: rgba($color-base, .085);
+		// border-top: 1px solid rgba($color-base, .085);
+		span.act {
+			display: inline-block;
+			padding: 0.3em 0.5em;
+			margin: 0.2em;
+			border: 1px solid rgba($color-base, .085);
+			@include texto-diminuto;
+		}
+	}
+}
+
+// MODULO CON IMAGEN Y DESCRIPCION TEXTUAL
+.modulo-imagen-descripcion {
+	margin: 1em 0 2em;
+	border: 2px solid white;
+	background-color: white;
+	box-shadow: 0 0 5px rgba(black, .1);
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+	p {
+		background-color: rgba(#333, 1);
+		padding: 1em;
+		color: rgba(white, .9);
+		@include titulos-light;
+		font-size: 13px;
+		line-height: 1.4;
+		a:link, a:active, a:visited {
+			color: lighten($accent, 20%);
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.columna-nav-laburos {
+	h3 {
+				@include texto-diminuto;
+				color: rgba($color-base, .4);
+				padding: 0.5em;
+				border-bottom: 1px solid rgba($color-base, .15);
+				font-weight: normal;
+	}
+		ul {
+			li {
+				padding: 0.75em 0.35em 0.6em 0.35em;
+				border-bottom: 1px solid rgba($color-base, .1);
+				@include texto-chico-pero-no-tanto;
+				font-size: 18px;
+				@media screen and (min-width: $tablets-para-arriba) {
+					font-size: 14px;
+				}
+				&:nth-of-type(even) {
+					background: rgba(white, .9);
+				}
+				a {
+					color: rgba($color-base, .7);
+					&:hover {
+						color: $color-base;
+					}
+				}
+			}
+		}
+}
+
+
+// CONTAINER PARA TODO EL CONTENIDO EN BIO
+.bio-container {
+	@include span(12);
+	padding: 0 0 0 1em;
+	background-color: white;
+	// margin: 1em 0;
+}
+
+// TEXTO EN BIO
+.bio {
+	@include span(12);
+	margin: 1em 0;
+	p {
+		margin-bottom: 1em;
+		color: rgba($color-base, .75);
+		padding-right: 1em;
+	}
+	p:last-of-type {
+		margin-bottom: 0.25em;
+	}
+	h2 {
+		color: darken($accent, 10%);
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+	p + h2 {
+		margin-top: 1em;
+	}
+	p + ul {
+		margin-top: -0.5em;
+		margin-bottom: 0.5em;
+	}
+	ul {
+		max-width: 300px;
+		list-style: square;
+		list-style-position: inside;
+		padding-left: 0.5em;
+		li {
+			font-size: 15px;
+			color: rgba($color-base, .75);
+			padding: 0.25em 0;
+			border-bottom: 1px solid rgba($color-base, .1);
+		}
+	}
+	@include susy-breakpoint($tablets-para-arriba) {
+		@include span(9);
+		padding: 0 0 0 1em;
+	}
+}
+
+// LINKS A REDES SOCIALES DENTRO DE BIO
+.social {
+	@include span(12);
+	margin-bottom: 2.5em;
+	@include susy-breakpoint($tablets-para-arriba) {
+		@include span(3 at 10);
+		margin-top: 2em;
+		margin-bottom: 0;
+	}
+	p {
+		@include texto-diminuto;
+		color: rgba($color-base, .4);
+		padding: 0.5em;
+		border-bottom: 1px solid rgba($color-base, .15);
+	}
+	ul {
+		li {
+			position: relative;
+			a {
+			padding: 0.5em 0.5em 0.35em 0.5em;
+			border-bottom: 1px solid rgba($color-base, .1);
+			@include texto-chico-pero-no-tanto;
+				color: rgba($color-base, .7);
+				display: block;
+			}
+			a:hover {
+				background-color: $accent;
+				color: white;
+			}
+			img {
+				position: absolute;
+				right: 20px;
+				top: 6px;
+				max-width: 20px;
+			}
+		}
+	}
+}
+
+// CONTACTOS ABAJO EN CADA PAGINA
+.contactos {
+	@include span(12);
+	padding: 1.5em;
+	margin-top: 1em;
+	@include texto-chico-pero-no-tanto;
+	background-color: white;
+	line-height: 1.5;
+	a {
+		font-weight: 400;
+		padding: 0 0.3em;
+		background: rgba($accent, .06);
+	}
+}

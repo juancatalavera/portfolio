@@ -1,0 +1,30 @@
+doctype html
+
+html
+
+	include ../includes/head.jade
+
+	body
+		.wrapper
+			include ../includes/header.jade
+		
+			.laburo
+				.columna-detalle-laburos
+					.detalle-laburo
+						.actividades
+							span.act Diseño
+						h2 Diseño de afiche
+						p La idea de esto era esencialmente llamar la atención, promocionar la carrera y conseguir que la gente se inscriba. 
+					
+					.modulo-imagen-descripcion
+						img(src="../images/maraton-brasilsul.jpg", alt="")
+						p Esta es la progresión aproximada que siguió el diseño. Arriba las propuestas rechazadas, abajo algunas variantes de lo que, con pequeñas modificaciones, fue la propuesta aceptada.
+			
+					.modulo-imagen-descripcion
+						img(src="../images/flyer-brasilsul-final.jpg", alt="")
+						p El diseño final, con los logos de los auspiciantes incluidos.
+		
+				.columna-nav-laburos
+					include ../includes/nav-laburos.jade
+		
+			include ../includes/contactos.jade

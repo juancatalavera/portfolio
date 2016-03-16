@@ -1,0 +1,32 @@
+// TIPOGRAFIA
+@mixin titulos {
+	font-family: 'Fira Sans', 'Lucida Sans', sans-serif;
+	font-weight: 700;
+}
+
+@mixin texto-regular {
+	font-family: 'Droid Serif', Georgia, serif;
+	font-size: 100%;
+	line-height: 1.5em;
+	text-rendering: optimizeLegibility;
+	}
+
+@mixin titulos-light {
+	font-family: 'Fira Sans', 'Lucida Sans', sans-serif;
+	font-weight: 300;
+}
+
+@mixin texto-chico-pero-no-tanto {
+	font-family: 'Fira Sans', 'Lucida Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 1.2em;
+	color: $color-base;
+}
+
+@mixin texto-diminuto {
+	font-family: Verdana, sans-serif;
+	font-size: 0.75em;
+	line-height: 1.3em;
+	// color: lighten($color-base, 40%);
+}

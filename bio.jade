@@ -1,0 +1,60 @@
+doctype html
+
+html
+
+	include ./includes/head.jade
+
+	body
+	
+		.wrapper
+			.header
+				.logo
+					h1 Juan Carlos Talavera
+					p Diseño gráfico / Web
+				.nav
+					ul
+						li
+							a(href="index.html") Inicio 
+			// ACA TERMINA EL HEADER
+
+			.bio-container
+				.bio
+					h2 Lo laboral
+					p Hago diseño gráfico en general, diseño web en particular, incluyendo HTML y CSS. Trabajo (por el momento) de manera independiente.
+					p En orden cronológico, estos son algunos lugares donde trabajé: 
+					ul.laburos
+						li ECSA (Equipos Contables)
+						li Corporación Tecnológica
+						li Highway Internet
+						li Tigo (cuando todavía era Telecel)
+						li Sinergis
+						li Personal
+						li Canal 13
+						li Chena Ventures
+					p Con excepción de los dos primeros, trabajé haciendo web (a veces para aplicaciones internas, a veces para el público en general) en todas partes.
+					
+					h2 Lo personal
+					p Leo bastante, principalmente ciencia ficción, fantasía y comics (de ciencia ficción y fantasía). Casi todo lo que leo está en inglés, porque las traducciones al español de España son odiosas y lo que me gusta usualmente no se traduce a un español más civilizado, o se traduce 5 años después. 
+					p También me gusta escribir, en teoría, pero en la práctica no lo hago tanto como querría / debería / podría. Empecé alrededor de 10 blogs, pero ninguno duró más de un par de meses. Algún día uno durará.
+					
+				.social
+					p También estoy en:
+					ul
+						li
+							a(href="https://www.facebook.com/juanca.talavera" target="_blank")
+								img(src="images/iconos-sociales/facebook.png", alt="")
+								| Facebook
+						li
+							a(href="https://twitter.com/juancatalavera" target="_blank")
+								img(src="images/iconos-sociales/twitter.png", alt="")
+								| Twitter
+						li
+							a(href="https://www.goodreads.com/user/show/28811316-juan-carlos" title="Juan Carlos - Asuncion" target="_blank")
+								img(src="images/iconos-sociales/gr.png", alt="")
+								| Goodreads
+						li
+							a(href="https://open.spotify.com/user/12124170070" target="_blank")
+								img(src="images/iconos-sociales/spotify.png", alt="")
+								| Spotify
+				
+			include ./includes/contactos.jade

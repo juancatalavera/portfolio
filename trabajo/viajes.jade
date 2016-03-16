@@ -1,0 +1,26 @@
+doctype html
+
+html
+
+	include ../includes/head.jade
+
+	body
+		.wrapper
+			include ../includes/header.jade
+		
+			.laburo
+				.columna-detalle-laburos
+					.detalle-laburo
+						.actividades
+							span.act Diseño
+						h2 Viajes.com
+						p La idea de este sitio era ofrecer, por medio de agencias de viaje que se ocuparían de actualizar el contenido, paquetes de vuelos / hoteles para gente buscando opciones para viajar. Intenté hacer algo simple (lo intento siempre).
+					
+					.modulo-imagen-descripcion
+						img(src="../images/updt-viajes.jpg", alt="")
+						p El logo (que me parece maravilloso en su simplicidad y expresividad, aunque quizás no se aprecia en este tamaño) y las ilustraciones fueron obra de <a href="https://twitter.com/rockopy" target="_blank">Rocko</a>, un gran ilustrador. Con eso como punto de partida intenté armar algo sencillo y "divertido". No tuvimos la oportunidad de averiguar que tan bien hubiera funcionado porque, mientras estabamos trabajando en esto, el dominio se vendió. Cosas que pasan.
+						
+				.columna-nav-laburos
+					include ../includes/nav-laburos.jade
+
+			include ../includes/contactos.jade

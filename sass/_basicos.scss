@@ -1,0 +1,43 @@
+// ESTILOS BASE
+body {
+	background-color: #f4f3f3;
+	// @include animacion-de-fondo;
+	@include texto-regular;
+	font-size: 1em;
+	padding: 0.5em;
+	color: $color-base;
+}
+
+h1, h2, h3 {
+	@include titulos;
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 1.8;
+}
+
+h2 {
+	font-size: 1.3em;
+	}
+
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
+
+a:link, a:active {
+	color: $color-base;
+	text-decoration: none;
+}
+
+a:visited {
+	color: rgba($color-base, .75);
+}
+
+a:hover {
+	color: darken($color-base, 20%);
+}

@@ -1,0 +1,30 @@
+doctype html
+
+html
+
+	include ../includes/head.jade
+
+	body
+		.wrapper
+			include ../includes/header.jade
+		
+			.laburo
+				.columna-detalle-laburos
+					.detalle-laburo
+						.actividades
+							span.act Diseño
+						h2 Presentación en Powerpoint & diseño de invitación
+						p Trabajando para <a href="http://www.vientosur.com.py">Viento Sur</a>, me encomendaron diseñar una presentación linda y sobria, pero no aburrida (gráficamente) para la presentación de este libro.
+					
+					.modulo-imagen-descripcion
+						img(src="../images/presentacion-libro.jpg", alt="")
+						p Además del diseño del fondo y la elección de colores y tipografía, también diseñé un collage con gráficos alusivos para cada slide en la presentación. Fue divertido.
+			
+					.modulo-imagen-descripcion
+						img(src="../images/invitacion-presentacion-libro.jpg", alt="")
+						p Al cliente le gustó como quedó la presentación, y en consecuencia me pidieron que diseñe también la invitación para el evento, en un estilo similar.
+				
+				.columna-nav-laburos
+					include ../includes/nav-laburos.jade		
+
+			include ../includes/contactos.jade
