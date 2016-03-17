@@ -321,6 +321,12 @@ $susy: (
 		margin-top: -0.5em;
 		margin-bottom: 0.5em;
 	}
+	a {
+		text-decoration: underline;
+		&:hover {
+			color: black;
+		}
+	}
 	ul {
 		max-width: 300px;
 		list-style: square;

@@ -430,6 +430,10 @@ a:hover {
   .bio p + ul {
     margin-top: -0.5em;
     margin-bottom: 0.5em; }
+  .bio a {
+    text-decoration: underline; }
+    .bio a:hover {
+      color: black; }
   .bio ul {
     max-width: 300px;
     list-style: square;
