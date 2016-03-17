@@ -418,7 +418,8 @@ a:hover {
   .bio p {
     margin-bottom: 1em;
     color: rgba(61, 49, 91, 0.75);
-    padding-right: 1em; }
+    padding-right: 1em;
+    line-height: 30px; }
   .bio p:last-of-type {
     margin-bottom: 0.25em; }
   .bio h2 {
@@ -429,7 +430,7 @@ a:hover {
     margin-top: 1em; }
   .bio p + ul {
     margin-top: -0.5em;
-    margin-bottom: 0.5em; }
+    margin-bottom: 1em; }
   .bio a {
     text-decoration: underline; }
     .bio a:hover {
