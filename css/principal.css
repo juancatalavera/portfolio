@@ -236,11 +236,12 @@ a:hover {
   .columna-1 .titulo-columna {
     padding: 1em; }
     .columna-1 .titulo-columna h2 {
-      color: #9AB87A; }
+      color: #749650; }
     .columna-1 .titulo-columna p {
       font-family: 'Fira Sans', 'Lucida Sans', sans-serif;
       font-weight: 300;
       color: rgba(0, 0, 0, 0.75);
+      font-size: 14px;
       line-height: 1.2; }
 
 .columna-2 {
@@ -271,10 +272,11 @@ a:hover {
   padding: 1em;
   background-color: rgba(255, 255, 255, 0.4); }
   .modulo-textos h2 {
-    color: #9AB87A; }
+    color: #749650; }
   .modulo-textos p {
     font-family: 'Fira Sans', 'Lucida Sans', sans-serif;
     font-weight: 300;
+    font-size: 14px;
     line-height: 1.2;
     margin-bottom: 0.5em; }
 
@@ -333,6 +335,10 @@ a:hover {
     font-family: 'Fira Sans', 'Lucida Sans', sans-serif;
     font-weight: 300;
     margin-bottom: 0.5em; }
+  .detalle-laburo a {
+    text-decoration: underline; }
+    .detalle-laburo a:hover {
+      color: black; }
   .detalle-laburo .actividades {
     position: absolute;
     bottom: 0;

@@ -101,11 +101,12 @@ $susy: (
 		.titulo-columna {
 			padding: 1em;
 			h2 {
-				color: $accent;
+				color: darken($accent, 15%);
 			}
 			p {
 				@include titulos-light;
 				color: rgba(black, .75);
+				font-size: 14px;
 				line-height: 1.2;
 			}
 		}
@@ -141,10 +142,11 @@ $susy: (
 		padding: 1em;
 		background-color: rgba(white, .4);
 		h2 {
-			color: $accent;
+			color: darken($accent, 15%);
 		}
 		p {
 			@include titulos-light;
+			font-size: 14px;
 			line-height: 1.2;
 			margin-bottom: 0.5em;
 		}
@@ -206,6 +208,12 @@ $susy: (
 	p {
 		@include titulos-light;
 		margin-bottom: 0.5em;
+	}
+	a {
+		text-decoration: underline;
+		&:hover {
+			color: black;
+		}
 	}
 	.actividades {
 		position: absolute;
